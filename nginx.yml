@@ -1,0 +1,16 @@
+--- 
+apiversion: v1
+kind: Pod
+metadata: 
+  name: web-server
+spec: 
+  containers: 
+    - 
+      image: "nginx:latest"
+      name: web-server
+      ports: 
+        - 
+          containerPort: 80
+      resources: 
+        limits: 
+          memory: 500Mi
