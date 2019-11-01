@@ -5,12 +5,10 @@ metadata:
   name: web-server
 spec: 
   containers: 
-    - 
-      image: "nginx:latest"
+    - image: nginx
       name: web-server
       ports: 
-        - 
-          containerPort: 80
+        - containerPort: 80
       resources: 
         limits: 
           memory: 500Mi
